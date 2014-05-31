@@ -6,7 +6,7 @@ function createNodes(data) {
     return data.map(function (object, index) {
         return {
             "id": index,// id is indexOf id
-            "label": pather.dirname(object.filePath).split(pather.sep).pop().replace(/(Ch\d*?)_b.*?$/i,"$1")
+            "label": pather.dirname(object.filePath).split(pather.sep).pop().replace(/(Ch\d*?)_.*?$/i,"$1")
                 + "/" + pather.basename(object.filePath)
         };
     })
