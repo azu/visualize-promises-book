@@ -1,0 +1,36 @@
+{
+  "name": "visualize-promises-book",
+  "description": "visualize promises-book",
+  "version": "0.0.1",
+  "homepage": "https://github.com/azu/visualize-promises-book/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/visualize-promises-book.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy app/app.js:public/app.js 8989",
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/visualize-promises-book/issues"
+  },
+  "dependencies": {
+    "asciidoc-dependency-graph": "0.0.4",
+    "lodash": "^2.4.1",
+    "vis": "^1.0.2"
+  },
+  "devDependencies": {
+    "beefy": "^1.1.0",
+    "browserify": "^4.1.6",
+    "espower-loader": "^0.7.1",
+    "intelli-espower-loader": "^0.1.0",
+    "mocha": "^1.20.0",
+    "power-assert": "^0.7.2"
+  }
+}

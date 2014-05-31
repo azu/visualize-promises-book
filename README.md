@@ -1,6 +1,11 @@
-# Project Name
+# visualize-promises-book
+
+> http://azu.github.io/visualize-promises-book/
 
 Show dependency graph of [azu/promises-book](https://github.com/azu/promises-book "azu/promises-book").
+
+* http://azu.github.io/visualize-promises-book/
+
 
 ## Installation
 
