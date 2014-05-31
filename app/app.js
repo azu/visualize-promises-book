@@ -19,7 +19,7 @@ var data = {
 var options = {
     width: '100%',
     height: '100%',
-    stabilize: false
+    physics: {barnesHut: {gravitationalConstant: -3400, centralGravity: 0.5, springLength: 222, springConstant: 0.046, damping: 0.1}}
 };
 var graph = new vis.Graph(container, data, options);
 

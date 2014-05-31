@@ -8,7 +8,8 @@ function createNodes(data) {
             "id": index,// id is indexOf id
             "label": pather.dirname(object.filePath).split(pather.sep).pop() + "/" + pather.basename(object.filePath)
         };
-    });
+    })
+
 }
 // create an array with edges
 /*
