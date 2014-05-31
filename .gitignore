@@ -1,0 +1,4 @@
+!/node_modules
+/node_modules/*
+# white list npm
+!/node_modules/vis/
