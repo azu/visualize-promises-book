@@ -3,12 +3,19 @@
 <head lang="ja">
     <meta charset="UTF-8">
     <title>graph</title>
+    <style>
+        html, body, .main-graph, #mygraph {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <link href="./node_modules/vis/dist/vis.min.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./node_modules/vis/dist/vis.min.js"></script>
 </head>
 <body>
-
-<div id="mygraph"></div>
-
-<script type="text/javascript" src="./node_modules/vis/dist/vis.min.js"></script>
+<div class="main-graph">
+    <div id="mygraph"></div>
+</div>
 <script src="public/app.js"></script>
 </body>
 </html>
