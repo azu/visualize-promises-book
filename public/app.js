@@ -313,7 +313,7 @@ var data = {
 var options = {
     width: '100%',
     height: '100%',
-    stabilize: false
+    physics: {barnesHut: {gravitationalConstant: -3400, centralGravity: 0.5, springLength: 222, springConstant: 0.046, damping: 0.1}}
 };
 var graph = new vis.Graph(container, data, options);
 
@@ -327,9 +327,11 @@ function createNodes(data) {
     return data.map(function (object, index) {
         return {
             "id": index,// id is indexOf id
-            "label": pather.basename(object.filePath)
+            "label": pather.dirname(object.filePath).split(pather.sep).pop().replace(/(Ch\d*?)_b.*?$/i,"$1")
+                + "/" + pather.basename(object.filePath)
         };
-    });
+    })
+
 }
 // create an array with edges
 /*
