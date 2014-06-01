@@ -5,7 +5,7 @@
 "use strict";
 var dataArray = require("../data.json");
 
-var creator = require("./node-creator");
+var creator = require("./Model/node-creator");
 // create an array with nodes
 var nodes = creator.createNodes(dataArray);
 var edges = creator.createEdges(dataArray);

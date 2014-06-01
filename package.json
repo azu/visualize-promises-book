@@ -23,7 +23,8 @@
   "dependencies": {
     "asciidoc-dependency-graph": "0.0.4",
     "lodash": "^2.4.1",
-    "vis": "^1.0.2"
+    "vis": "^1.0.2",
+    "vue": "^0.10.4"
   },
   "devDependencies": {
     "beefy": "^1.1.0",

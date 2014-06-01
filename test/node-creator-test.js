@@ -1,6 +1,6 @@
 "use strict";
 var assert = require("power-assert");
-var creator = require("../app/node-creator");
+var creator = require("../app/Model/node-creator");
 describe("node-creator", function () {
     describe("#createEdges", function () {
         var data = [

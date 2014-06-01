@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>view ref list each title</title>
+</head>
+<body>
+<ul id="demo">
+    <li v-repeat="items">
+        <h2><a name="{{filePath}}" href="{{filePath | githubURL}}">{{filePath | printPath}}}</a></h2>
+        <h3 v-show="referFilePaths.length > 0">参照してるパス</h3>
+        <ul>
+            <li v-repeat="referFilePaths">
+                <a href="#{{filePath}}">{{$value | printPath}}</a>
+            </li>
+        </ul>
+        <h3 v-show="referredFilePaths.length > 0">参照されてるパス</h3>
+        <ul>
+            <li v-repeat="referredFilePaths">
+                <a href="#{{filePath}}">{{$value | printPath}}</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<script src="public/ref-list.js"></script>
+</body>
+</html>
