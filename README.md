@@ -1,11 +1,12 @@
 # visualize-promises-book
 
-> http://azu.github.io/visualize-promises-book/
 
 Show dependency graph of [azu/promises-book](https://github.com/azu/promises-book "azu/promises-book").
 
-* http://azu.github.io/visualize-promises-book/
-
+* 依存関係の図
+    * http://azu.github.io/visualize-promises-book/
+* それぞれの文章の参照/参照されてる一覧
+    * http://azu.github.io/visualize-promises-book/ref-list.html
 
 ## Installation
 
